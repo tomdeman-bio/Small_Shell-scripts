@@ -1,0 +1,1 @@
+for file in *; do new="$(echo "$file" | cut -d '_' -f 1,2)".fastq.gz; mv "$file" "$new"; done
